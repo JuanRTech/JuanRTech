@@ -15,9 +15,7 @@
         </tr>
         <tr>
             <td style="width:50%">
-                <img src="https://github-stats.juanr.tech/api?username=juanrtech&show_icons=true&theme=transparent&include_all_commits=true">
-                <img src="https://github-stats.juanr.tech/api/top-langs/?username=juanrtech&theme=transparent&layout=donut">
-                <img src="/github-metrics.svg" alt="Metrics" width="400">
+                <img src="/github-metrics.svg" alt="Metrics" width="1000">
             </td>
             <td style="width:50%">
                 <h3>I use these things to make cool stuff</h3>
