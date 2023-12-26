@@ -3,10 +3,10 @@
 <div align="center">
     <table>
         <tr>
-            <td>
+            <td style="width:50%">
                 <img src="https://i.redd.it/gtnwobk068cb1.jpg">
             </td>
-            <td>
+            <td style="width:50%">
                 <h3>I'm Juan</h3>
                 <p>Executive Vice President of Engineering & Operations @ Cyber Info</p>
                 <br>
@@ -14,12 +14,12 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="width:50%">
                 <img src="https://github-stats.juanr.tech/api?username=juanrtech&show_icons=true&theme=transparent&include_all_commits=true">
                 <img src="https://github-stats.juanr.tech/api/top-langs/?username=juanrtech&theme=transparent&layout=donut">
                 <img src="/github-metrics.svg" alt="Metrics" width="400">
             </td>
-            <td>
+            <td style="width:50%">
                 <h3>I use these things to make cool stuff</h3>
                 <h4>Languages & Frameworks</h4>
                 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
