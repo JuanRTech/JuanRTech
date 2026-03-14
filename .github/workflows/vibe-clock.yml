@@ -1,0 +1,39 @@
+name: Update Vibe Clock Stats
+
+on:
+  schedule: [{cron: "0 */6 * * *"}]
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install vibe-clock
+        run: pip install vibe-clock
+
+      - name: Fetch stats from gist
+        run: |
+          curl -sf "https://gist.githubusercontent.com/JuanRTech/${{ secrets.VIBE_CLOCK_GIST_ID }}/raw/vibe-clock-data.json" \
+            -o /tmp/vibe-clock-data.json
+
+      - name: Generate SVGs
+        run: |
+          mkdir -p ./images
+          vibe-clock render --from-json /tmp/vibe-clock-data.json \
+            --type card,donut,token_bars --theme dark --output ./images
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/
+          git diff --staged --quiet || git commit -m "chore: update vibe-clock stats [skip ci]"
+          git push
