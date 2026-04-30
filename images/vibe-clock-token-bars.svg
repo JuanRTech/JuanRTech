@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="124" viewBox="0 0 495 124">
-  <rect width="493" height="122" x="1" y="1" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="92" viewBox="0 0 495 92">
+  <rect width="493" height="90" x="1" y="1" rx="4.5" fill="#0d1117" stroke="#30363d"/>
   <text x="20" y="28" fill="#58a6ff" font-size="14" font-weight="700" font-family="Arial, Helvetica, sans-serif">
     Token Usage by Model
   </text>
   <g font-family="Courier New, Courier, monospace">
-    <text x="20" y="63" fill="#c9d1d9" font-size="11">claude-opus-4-6</text><rect x="190" y="50" width="250" height="18" rx="3" fill="#21262d"/><rect x="190" y="50" width="116" height="18" rx="3" fill="#58a6ff"/><text x="448" y="63" fill="#8b949e" font-size="10">5.2M</text>
-    <text x="20" y="95" fill="#c9d1d9" font-size="11">gpt-5.5</text><rect x="190" y="82" width="250" height="18" rx="3" fill="#21262d"/><rect x="190" y="82" width="250" height="18" rx="3" fill="#3fb950"/><text x="448" y="95" fill="#8b949e" font-size="10">11.2M</text>
+    <text x="20" y="63" fill="#c9d1d9" font-size="11">gpt-5.5</text><rect x="190" y="50" width="250" height="18" rx="3" fill="#21262d"/><rect x="190" y="50" width="250" height="18" rx="3" fill="#58a6ff"/><text x="448" y="63" fill="#8b949e" font-size="10">11.2M</text>
   </g>
 </svg>
